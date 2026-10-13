@@ -1,0 +1,176 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 100,
+  "train_samples": 45,
+  "test_samples": 15,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "roc_auc": 1.0,
+  "confusion_matrix": {
+    "true_negative": 8,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_positive": 7,
+    "raw_matrix": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        7
+      ]
+    ]
+  },
+  "feature_importances": [
+    {
+      "rank": 1,
+      "feature": "ela_mean_error",
+      "importance": 0.2752
+    },
+    {
+      "rank": 2,
+      "feature": "rgb_entropy_mean",
+      "importance": 0.1378
+    },
+    {
+      "rank": 3,
+      "feature": "noise_local_var_std",
+      "importance": 0.1306
+    },
+    {
+      "rank": 4,
+      "feature": "cm_keypoints_count",
+      "importance": 0.0576
+    },
+    {
+      "rank": 5,
+      "feature": "hist_comb_ratio",
+      "importance": 0.0532
+    },
+    {
+      "rank": 6,
+      "feature": "gray_mean",
+      "importance": 0.0489
+    },
+    {
+      "rank": 7,
+      "feature": "noise_kurtosis",
+      "importance": 0.0463
+    },
+    {
+      "rank": 8,
+      "feature": "ela_block_variance",
+      "importance": 0.045
+    },
+    {
+      "rank": 9,
+      "feature": "ela_max_error",
+      "importance": 0.0353
+    },
+    {
+      "rank": 10,
+      "feature": "noise_inconsistency_ratio",
+      "importance": 0.0275
+    },
+    {
+      "rank": 11,
+      "feature": "noise_snr_db",
+      "importance": 0.0211
+    },
+    {
+      "rank": 12,
+      "feature": "noise_global_variance",
+      "importance": 0.0205
+    },
+    {
+      "rank": 13,
+      "feature": "gray_entropy",
+      "importance": 0.0184
+    },
+    {
+      "rank": 14,
+      "feature": "gray_kurtosis",
+      "importance": 0.0165
+    },
+    {
+      "rank": 15,
+      "feature": "gray_std",
+      "importance": 0.0152
+    },
+    {
+      "rank": 16,
+      "feature": "noise_global_std",
+      "importance": 0.015
+    },
+    {
+      "rank": 17,
+      "feature": "noise_skewness",
+      "importance": 0.0144
+    },
+    {
+      "rank": 18,
+      "feature": "gray_skewness",
+      "importance": 0.007
+    },
+    {
+      "rank": 19,
+      "feature": "cm_inliers_count",
+      "importance": 0.0044
+    },
+    {
+      "rank": 20,
+      "feature": "ela_std_error",
+      "importance": 0.0042
+    },
+    {
+      "rank": 21,
+      "feature": "ela_block_ratio",
+      "importance": 0.0037
+    },
+    {
+      "rank": 22,
+      "feature": "ela_p95_error",
+      "importance": 0.0024
+    },
+    {
+      "rank": 23,
+      "feature": "meta_has_exif",
+      "importance": 0.0
+    },
+    {
+      "rank": 24,
+      "feature": "meta_software_flag",
+      "importance": 0.0
+    }
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 8.0
+    },
+    "1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    }
+  }
+}
