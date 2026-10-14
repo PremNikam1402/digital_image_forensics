@@ -61,7 +61,9 @@ class ForensicPredictor:
         image: Union[Image.Image, np.ndarray],
         image_path: Optional[Union[str, Path]] = None,
         copy_move_algo: str = "SIFT",
-        ela_quality: int = 90
+        ela_quality: int = 90,
+        lowe_ratio: float = 0.75,
+        min_spatial_distance: float = 35.0,
     ) -> Dict[str, Any]:
         """Perform full forensic analysis and ML tampering prediction.
         
@@ -70,6 +72,8 @@ class ForensicPredictor:
             image_path: Path to disk file (for EXIF extraction)
             copy_move_algo: 'SIFT' or 'ORB'
             ela_quality: ELA JPEG quality level
+            lowe_ratio: Lowe's ratio test threshold (default 0.75)
+            min_spatial_distance: Minimum pixel distance between matched keypoints
             
         Returns:
             Dictionary containing:
@@ -88,7 +92,9 @@ class ForensicPredictor:
             image_path=image_path,
             include_metadata=True,
             copy_move_algo=copy_move_algo,
-            ela_quality=ela_quality
+            ela_quality=ela_quality,
+            lowe_ratio=lowe_ratio,
+            min_spatial_distance=min_spatial_distance,
         )
 
         # Step 2: Supervised ML Inference

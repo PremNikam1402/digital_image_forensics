@@ -85,7 +85,9 @@ def extract_all_features(
     image_path: Optional[Union[str, Path]] = None,
     include_metadata: bool = True,
     copy_move_algo: str = "SIFT",
-    ela_quality: int = 90
+    ela_quality: int = 90,
+    lowe_ratio: float = 0.75,
+    min_spatial_distance: float = 35.0,
 ) -> Tuple[np.ndarray, Dict[str, Any], Dict[str, Any]]:
     """Extract full 24-dimensional forensic feature vector and component dictionaries.
     
@@ -95,6 +97,8 @@ def extract_all_features(
         include_metadata: Whether to extract metadata indicators (default True)
         copy_move_algo: 'SIFT' or 'ORB' (default 'SIFT')
         ela_quality: ELA quality factor (default 90)
+        lowe_ratio: Lowe's ratio test threshold (default 0.75)
+        min_spatial_distance: Minimum pixel distance between matched keypoints (default 35.0)
         
     Returns:
         Tuple of:
@@ -117,7 +121,12 @@ def extract_all_features(
     hist_stats = perform_histogram_analysis(pil_image)
 
     # 4. Run Copy-Move Forgery Detection
-    cm_vis, cm_results = detect_copy_move(pil_image, algorithm=copy_move_algo)
+    cm_vis, cm_results = detect_copy_move(
+        pil_image,
+        algorithm=copy_move_algo,
+        ratio_threshold=lowe_ratio,
+        min_spatial_distance=min_spatial_distance,
+    )
 
     # 5. Extract Metadata
     if include_metadata and image_path is not None and Path(image_path).exists():

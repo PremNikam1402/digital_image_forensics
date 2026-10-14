@@ -28,112 +28,112 @@
     {
       "rank": 1,
       "feature": "ela_mean_error",
-      "importance": 0.2752
+      "importance": 0.2842
     },
     {
       "rank": 2,
       "feature": "rgb_entropy_mean",
-      "importance": 0.1378
+      "importance": 0.1632
     },
     {
       "rank": 3,
       "feature": "noise_local_var_std",
-      "importance": 0.1306
+      "importance": 0.1179
     },
     {
       "rank": 4,
-      "feature": "cm_keypoints_count",
-      "importance": 0.0576
+      "feature": "hist_comb_ratio",
+      "importance": 0.0626
     },
     {
       "rank": 5,
-      "feature": "hist_comb_ratio",
-      "importance": 0.0532
+      "feature": "cm_keypoints_count",
+      "importance": 0.0594
     },
     {
       "rank": 6,
       "feature": "gray_mean",
-      "importance": 0.0489
+      "importance": 0.0486
     },
     {
       "rank": 7,
-      "feature": "noise_kurtosis",
-      "importance": 0.0463
+      "feature": "ela_max_error",
+      "importance": 0.041
     },
     {
       "rank": 8,
-      "feature": "ela_block_variance",
-      "importance": 0.045
+      "feature": "noise_kurtosis",
+      "importance": 0.0385
     },
     {
       "rank": 9,
-      "feature": "ela_max_error",
-      "importance": 0.0353
+      "feature": "ela_block_variance",
+      "importance": 0.0356
     },
     {
       "rank": 10,
       "feature": "noise_inconsistency_ratio",
-      "importance": 0.0275
+      "importance": 0.031
     },
     {
       "rank": 11,
-      "feature": "noise_snr_db",
-      "importance": 0.0211
+      "feature": "gray_std",
+      "importance": 0.0204
     },
     {
       "rank": 12,
-      "feature": "noise_global_variance",
-      "importance": 0.0205
+      "feature": "noise_snr_db",
+      "importance": 0.0185
     },
     {
       "rank": 13,
-      "feature": "gray_entropy",
-      "importance": 0.0184
+      "feature": "noise_global_std",
+      "importance": 0.0178
     },
     {
       "rank": 14,
-      "feature": "gray_kurtosis",
-      "importance": 0.0165
+      "feature": "noise_skewness",
+      "importance": 0.0139
     },
     {
       "rank": 15,
-      "feature": "gray_std",
-      "importance": 0.0152
+      "feature": "gray_skewness",
+      "importance": 0.0111
     },
     {
       "rank": 16,
-      "feature": "noise_global_std",
-      "importance": 0.015
+      "feature": "gray_entropy",
+      "importance": 0.0075
     },
     {
       "rank": 17,
-      "feature": "noise_skewness",
-      "importance": 0.0144
+      "feature": "ela_block_ratio",
+      "importance": 0.0061
     },
     {
       "rank": 18,
-      "feature": "gray_skewness",
-      "importance": 0.007
+      "feature": "cm_inliers_count",
+      "importance": 0.0061
     },
     {
       "rank": 19,
-      "feature": "cm_inliers_count",
-      "importance": 0.0044
+      "feature": "noise_global_variance",
+      "importance": 0.0054
     },
     {
       "rank": 20,
-      "feature": "ela_std_error",
-      "importance": 0.0042
+      "feature": "gray_kurtosis",
+      "importance": 0.0053
     },
     {
       "rank": 21,
-      "feature": "ela_block_ratio",
-      "importance": 0.0037
+      "feature": "ela_std_error",
+      "importance": 0.0045
     },
     {
       "rank": 22,
       "feature": "ela_p95_error",
-      "importance": 0.0024
+      "importance": 0.0017
     },
     {
       "rank": 23,

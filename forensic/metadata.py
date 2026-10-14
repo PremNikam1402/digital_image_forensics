@@ -251,6 +251,7 @@ def extract_metadata(image_path_or_obj: Union[str, Path, Image.Image]) -> Dict[s
             if shutil.which("exiftool"):
                 import tempfile
                 tfile = tempfile.NamedTemporaryFile(suffix=".jpg", delete=False)
+                tfile.close()
                 try:
                     exif_bytes = image_path_or_obj.getexif()
                     image_path_or_obj.save(tfile.name, format="JPEG", exif=exif_bytes)
